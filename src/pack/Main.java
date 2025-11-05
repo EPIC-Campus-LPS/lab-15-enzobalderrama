@@ -1,8 +1,9 @@
 package pack;
+import java.io.IOException;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException{
 		System.out.println("Create new venue with 20 rows of 50 columns with default price of 50.00.");  
         Venue venue = new Venue(20, 50, 50.0);  
   
@@ -44,9 +45,9 @@ public class Main {
         }  
   
   
-//        venue.printVenue();  
-//        venue.printVenueType();  
-//        venue.printVenuePrice();  
+        venue.printVenue();  
+        venue.printVenueType();  
+        venue.printVenuePrice();  
 	}
 
 }
