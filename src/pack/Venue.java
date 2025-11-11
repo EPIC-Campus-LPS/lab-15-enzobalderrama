@@ -37,8 +37,8 @@ public class Venue {
 	public void setPremium(int row, int colStart, int colEnd, double price) {
 		for (int j = 0; j < colEnd-colStart; j++) {
 			for (int i = 0; i < seat.length; i++) {
-				seat[j+colStart][i].setType("P");
-				seat[j+colStart][i].setPrice(price);
+				seat[i][j+colStart].setType("P");
+				seat[i][j+colStart].setPrice(price);
 			}
 		}
 	}
