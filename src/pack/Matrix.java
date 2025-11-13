@@ -48,7 +48,7 @@ public class Matrix {
 					arrcheck[j] = -1;
 				}
 			}
-			if (count > 1) {
+			if (count > 1 && arrcheck[i] != -1) {
 				fullstring += arrcheck[i] + ": " + count + "\n";
 			}
 		}
